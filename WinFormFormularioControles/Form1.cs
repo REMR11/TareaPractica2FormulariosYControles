@@ -23,7 +23,8 @@ namespace WinFormFormularioControles
         /// Método para personalizar el diseño ocultando submenús
         /// Oculta subMenus, utilizado en eventos click
         /// </summary>
-        private void CustomizeDesing() { 
+        private void CustomizeDesing()
+        {
             panelSubMenu1.Visible = false;
             panelSubMenu2.Visible = false;
         }
@@ -36,7 +37,7 @@ namespace WinFormFormularioControles
         {
             if (panelSubMenu1.Visible)
                 panelSubMenu1.Visible = false;
-            if (panelSubMenu2.Visible) 
+            if (panelSubMenu2.Visible)
                 panelSubMenu2.Visible = false;
         }
 
@@ -47,15 +48,40 @@ namespace WinFormFormularioControles
         /// En caso de que el menu actual este visible sera ocultado
         /// </summary>
         /// <param name="pSubMenu">Panel seleccionado, normalmente mediante un evento click</param>
-        private void ShowSubMenu(Panel pSubMenu) {
+        private void ShowSubMenu(Panel pSubMenu)
+        {
             if (!pSubMenu.Visible)
             {
                 HideSubMenu();
                 pSubMenu.Visible = true;
             }
-            else {
+            else
+            {
                 pSubMenu.Visible = false;
             }
+        }
+
+        private Form activeForm = null;
+
+        /// <summary>
+        /// Metodo que se encarga de abrir un formulario hijo dentro de un contenedor principal
+        /// </summary>
+        /// <param name="pChildForm"></param>
+        private void OpenChildForm(Form pChildForm)
+        {
+            if (activeForm != null) { 
+                activeForm.Close();
+            }
+
+            activeForm = pChildForm;
+
+            pChildForm.TopLevel = false;
+            pChildForm.FormBorderStyle = FormBorderStyle.None;
+            pChildForm.Dock = DockStyle.Fill;
+            panelContainerForm.Controls.Add(activeForm);
+            panelContainerForm.Tag = activeForm;
+            pChildForm.BringToFront();
+            pChildForm.Show();
         }
         #endregion
 
@@ -127,5 +153,7 @@ namespace WinFormFormularioControles
             HideSubMenu();
         }
         #endregion
+
+
     }
 }
