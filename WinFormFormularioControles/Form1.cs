@@ -91,8 +91,9 @@ namespace WinFormFormularioControles
             ShowSubMenu(panelSubMenu1);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnControles_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Controles());
             HideSubMenu();
         }
 
@@ -152,8 +153,9 @@ namespace WinFormFormularioControles
         {
             HideSubMenu();
         }
+
         #endregion
 
-
+        
     }
 }
