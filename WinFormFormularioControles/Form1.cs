@@ -69,7 +69,8 @@ namespace WinFormFormularioControles
         /// <param name="pChildForm"></param>
         private void OpenChildForm(Form pChildForm)
         {
-            if (activeForm != null) { 
+            if (activeForm != null)
+            {
                 activeForm.Close();
             }
 
@@ -128,33 +129,36 @@ namespace WinFormFormularioControles
             OpenChildForm(new RadioButtonForm());
             HideSubMenu();
         }
-        private void button10_Click(object sender, EventArgs e)
+        private void btnPictureBox_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new PictureBoxForm());
+            HideSubMenu();
+        }
+        private void btnToolTip_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ToolTipForm());
+            HideSubMenu();
+        }
+        private void btnCalculadoraIntereses_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new calculadoraIntereses());
             HideSubMenu();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+
+        private void btnPruebaListBox_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new PruebaListBox());
             HideSubMenu();
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            HideSubMenu();
-        }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnComboBox_Click(object sender, EventArgs e)
         {
-            HideSubMenu();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
+            OpenChildForm(new PruebaComboBox());
             HideSubMenu();
         }
 
         #endregion
-
-        
     }
 }

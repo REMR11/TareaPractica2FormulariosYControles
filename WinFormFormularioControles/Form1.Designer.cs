@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(panelLogo));
             this.panelSideBar = new System.Windows.Forms.Panel();
             this.panelSubMenu2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnComboBox = new System.Windows.Forms.Button();
+            this.btnPruebaListBox = new System.Windows.Forms.Button();
+            this.btnCalculadoraIntereses = new System.Windows.Forms.Button();
+            this.btnToolTip = new System.Windows.Forms.Button();
+            this.btnPictureBox = new System.Windows.Forms.Button();
             this.btnRadioButton = new System.Windows.Forms.Button();
             this.btnMenuEjercicios2 = new System.Windows.Forms.Button();
             this.panelSubMenu1 = new System.Windows.Forms.Panel();
@@ -76,11 +76,11 @@
             // panelSubMenu2
             // 
             this.panelSubMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.panelSubMenu2.Controls.Add(this.button6);
-            this.panelSubMenu2.Controls.Add(this.button7);
-            this.panelSubMenu2.Controls.Add(this.button8);
-            this.panelSubMenu2.Controls.Add(this.button9);
-            this.panelSubMenu2.Controls.Add(this.button10);
+            this.panelSubMenu2.Controls.Add(this.btnComboBox);
+            this.panelSubMenu2.Controls.Add(this.btnPruebaListBox);
+            this.panelSubMenu2.Controls.Add(this.btnCalculadoraIntereses);
+            this.panelSubMenu2.Controls.Add(this.btnToolTip);
+            this.panelSubMenu2.Controls.Add(this.btnPictureBox);
             this.panelSubMenu2.Controls.Add(this.btnRadioButton);
             this.panelSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenu2.Location = new System.Drawing.Point(0, 389);
@@ -88,85 +88,90 @@
             this.panelSubMenu2.Size = new System.Drawing.Size(233, 279);
             this.panelSubMenu2.TabIndex = 4;
             // 
-            // button6
+            // btnComboBox
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 200);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(233, 40);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnComboBox.FlatAppearance.BorderSize = 0;
+            this.btnComboBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnComboBox.Location = new System.Drawing.Point(0, 200);
+            this.btnComboBox.Name = "btnComboBox";
+            this.btnComboBox.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnComboBox.Size = new System.Drawing.Size(233, 40);
+            this.btnComboBox.TabIndex = 5;
+            this.btnComboBox.Text = "ComboBox";
+            this.btnComboBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnComboBox.UseVisualStyleBackColor = false;
+            this.btnComboBox.Click += new System.EventHandler(this.btnComboBox_Click);
             // 
-            // button7
+            // btnPruebaListBox
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(0, 160);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(233, 40);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "button7";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPruebaListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnPruebaListBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPruebaListBox.FlatAppearance.BorderSize = 0;
+            this.btnPruebaListBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnPruebaListBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPruebaListBox.Location = new System.Drawing.Point(0, 160);
+            this.btnPruebaListBox.Name = "btnPruebaListBox";
+            this.btnPruebaListBox.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPruebaListBox.Size = new System.Drawing.Size(233, 40);
+            this.btnPruebaListBox.TabIndex = 4;
+            this.btnPruebaListBox.Text = "Prueba ListBox";
+            this.btnPruebaListBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPruebaListBox.UseVisualStyleBackColor = false;
+            this.btnPruebaListBox.Click += new System.EventHandler(this.btnPruebaListBox_Click);
             // 
-            // button8
+            // btnCalculadoraIntereses
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(0, 120);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(233, 40);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "button8";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnCalculadoraIntereses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnCalculadoraIntereses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCalculadoraIntereses.FlatAppearance.BorderSize = 0;
+            this.btnCalculadoraIntereses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnCalculadoraIntereses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalculadoraIntereses.Location = new System.Drawing.Point(0, 120);
+            this.btnCalculadoraIntereses.Name = "btnCalculadoraIntereses";
+            this.btnCalculadoraIntereses.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCalculadoraIntereses.Size = new System.Drawing.Size(233, 40);
+            this.btnCalculadoraIntereses.TabIndex = 3;
+            this.btnCalculadoraIntereses.Text = "Calculadora de Intereses";
+            this.btnCalculadoraIntereses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalculadoraIntereses.UseVisualStyleBackColor = false;
+            this.btnCalculadoraIntereses.Click += new System.EventHandler(this.btnCalculadoraIntereses_Click);
             // 
-            // button9
+            // btnToolTip
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(0, 80);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(233, 40);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "button9";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnToolTip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnToolTip.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnToolTip.FlatAppearance.BorderSize = 0;
+            this.btnToolTip.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnToolTip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnToolTip.Location = new System.Drawing.Point(0, 80);
+            this.btnToolTip.Name = "btnToolTip";
+            this.btnToolTip.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnToolTip.Size = new System.Drawing.Size(233, 40);
+            this.btnToolTip.TabIndex = 2;
+            this.btnToolTip.Text = "ToolTip";
+            this.btnToolTip.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnToolTip.UseVisualStyleBackColor = false;
+            this.btnToolTip.Click += new System.EventHandler(this.btnToolTip_Click);
             // 
-            // button10
+            // btnPictureBox
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(0, 40);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(233, 40);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "button10";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnPictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPictureBox.FlatAppearance.BorderSize = 0;
+            this.btnPictureBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnPictureBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPictureBox.Location = new System.Drawing.Point(0, 40);
+            this.btnPictureBox.Name = "btnPictureBox";
+            this.btnPictureBox.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPictureBox.Size = new System.Drawing.Size(233, 40);
+            this.btnPictureBox.TabIndex = 1;
+            this.btnPictureBox.Text = "PictureBox";
+            this.btnPictureBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPictureBox.UseVisualStyleBackColor = false;
+            this.btnPictureBox.Click += new System.EventHandler(this.btnPictureBox_Click);
             // 
             // btnRadioButton
             // 
@@ -396,11 +401,11 @@
         private System.Windows.Forms.Button btnPruebaLabel;
         private System.Windows.Forms.Button btnControles;
         private System.Windows.Forms.Panel panelSubMenu2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnComboBox;
+        private System.Windows.Forms.Button btnPruebaListBox;
+        private System.Windows.Forms.Button btnCalculadoraIntereses;
+        private System.Windows.Forms.Button btnToolTip;
+        private System.Windows.Forms.Button btnPictureBox;
         private System.Windows.Forms.Button btnRadioButton;
         private System.Windows.Forms.Button btnMenuEjercicios2;
         private System.Windows.Forms.Panel panelContainerForm;

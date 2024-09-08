@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="calculadoraIntereses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculadoraIntereses.Designer.cs">
+      <DependentUpon>calculadoraIntereses.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,13 +82,31 @@
     <Compile Include="PanelForm.Designer.cs">
       <DependentUpon>PanelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PictureBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PictureBoxForm.Designer.cs">
+      <DependentUpon>PictureBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebaComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaComboBox.Designer.cs">
+      <DependentUpon>PruebaComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="PruebaLabel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PruebaLabel.Designer.cs">
       <DependentUpon>PruebaLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaListBox.Designer.cs">
+      <DependentUpon>PruebaListBox.cs</DependentUpon>
     </Compile>
     <Compile Include="RadioButtonForm.cs">
       <SubType>Form</SubType>
@@ -90,6 +114,15 @@
     <Compile Include="RadioButtonForm.Designer.cs">
       <DependentUpon>RadioButtonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ToolTipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolTipForm.Designer.cs">
+      <DependentUpon>ToolTipForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="calculadoraIntereses.resx">
+      <DependentUpon>calculadoraIntereses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckBoxForm.resx">
       <DependentUpon>CheckBoxForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +138,9 @@
     <EmbeddedResource Include="PanelForm.resx">
       <DependentUpon>PanelForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PictureBoxForm.resx">
+      <DependentUpon>PictureBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,11 +150,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PruebaComboBox.resx">
+      <DependentUpon>PruebaComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PruebaLabel.resx">
       <DependentUpon>PruebaLabel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PruebaListBox.resx">
+      <DependentUpon>PruebaListBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RadioButtonForm.resx">
       <DependentUpon>RadioButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTipForm.resx">
+      <DependentUpon>ToolTipForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -134,7 +179,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="IMG\" />
+    <Content Include="IMG\LogoUFG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
