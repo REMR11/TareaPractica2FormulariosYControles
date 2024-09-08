@@ -90,30 +90,30 @@ namespace WinFormFormularioControles
         {
             ShowSubMenu(panelSubMenu1);
         }
-
         private void btnControles_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Controles());
             HideSubMenu();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnPruebaLabel_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new PruebaLabel());
             HideSubMenu();
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void btnListBoxComboBox_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new ListBoxyComboBox());
             HideSubMenu();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void btnPanel_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new PanelForm());
             HideSubMenu();
         }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void btnCheckBox_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new CheckBoxForm());
             HideSubMenu();
         }
         #endregion
@@ -123,12 +123,11 @@ namespace WinFormFormularioControles
         {
             ShowSubMenu(panelSubMenu2);
         }
-
-        private void button11_Click(object sender, EventArgs e)
+        private void btnRadioButton_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new RadioButtonForm());
             HideSubMenu();
         }
-
         private void button10_Click(object sender, EventArgs e)
         {
             HideSubMenu();

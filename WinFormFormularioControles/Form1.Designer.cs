@@ -36,13 +36,13 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnRadioButton = new System.Windows.Forms.Button();
             this.btnMenuEjercicios2 = new System.Windows.Forms.Button();
             this.panelSubMenu1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCheckBox = new System.Windows.Forms.Button();
+            this.btnPanel = new System.Windows.Forms.Button();
+            this.btnListBoxComboBox = new System.Windows.Forms.Button();
+            this.btnPruebaLabel = new System.Windows.Forms.Button();
             this.btnControles = new System.Windows.Forms.Button();
             this.btnMenuEjercicios1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -81,7 +81,7 @@
             this.panelSubMenu2.Controls.Add(this.button8);
             this.panelSubMenu2.Controls.Add(this.button9);
             this.panelSubMenu2.Controls.Add(this.button10);
-            this.panelSubMenu2.Controls.Add(this.button11);
+            this.panelSubMenu2.Controls.Add(this.btnRadioButton);
             this.panelSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenu2.Location = new System.Drawing.Point(0, 389);
             this.panelSubMenu2.Name = "panelSubMenu2";
@@ -168,21 +168,22 @@
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnRadioButton
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(233, 40);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "button11";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnRadioButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnRadioButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRadioButton.FlatAppearance.BorderSize = 0;
+            this.btnRadioButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnRadioButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRadioButton.Location = new System.Drawing.Point(0, 0);
+            this.btnRadioButton.Name = "btnRadioButton";
+            this.btnRadioButton.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnRadioButton.Size = new System.Drawing.Size(233, 40);
+            this.btnRadioButton.TabIndex = 0;
+            this.btnRadioButton.Text = "RadioButton";
+            this.btnRadioButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRadioButton.UseVisualStyleBackColor = false;
+            this.btnRadioButton.Click += new System.EventHandler(this.btnRadioButton_Click);
             // 
             // btnMenuEjercicios2
             // 
@@ -206,10 +207,10 @@
             // panelSubMenu1
             // 
             this.panelSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(224)))), ((int)(((byte)(251)))));
-            this.panelSubMenu1.Controls.Add(this.button5);
-            this.panelSubMenu1.Controls.Add(this.button4);
-            this.panelSubMenu1.Controls.Add(this.button3);
-            this.panelSubMenu1.Controls.Add(this.button2);
+            this.panelSubMenu1.Controls.Add(this.btnCheckBox);
+            this.panelSubMenu1.Controls.Add(this.btnPanel);
+            this.panelSubMenu1.Controls.Add(this.btnListBoxComboBox);
+            this.panelSubMenu1.Controls.Add(this.btnPruebaLabel);
             this.panelSubMenu1.Controls.Add(this.btnControles);
             this.panelSubMenu1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenu1.Location = new System.Drawing.Point(0, 142);
@@ -217,69 +218,73 @@
             this.panelSubMenu1.Size = new System.Drawing.Size(233, 202);
             this.panelSubMenu1.TabIndex = 2;
             // 
-            // button5
+            // btnCheckBox
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 160);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(233, 40);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnCheckBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCheckBox.FlatAppearance.BorderSize = 0;
+            this.btnCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckBox.Location = new System.Drawing.Point(0, 160);
+            this.btnCheckBox.Name = "btnCheckBox";
+            this.btnCheckBox.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCheckBox.Size = new System.Drawing.Size(233, 40);
+            this.btnCheckBox.TabIndex = 4;
+            this.btnCheckBox.Text = "CheckBox";
+            this.btnCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckBox.UseVisualStyleBackColor = false;
+            this.btnCheckBox.Click += new System.EventHandler(this.btnCheckBox_Click);
             // 
-            // button4
+            // btnPanel
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 120);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(233, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPanel.FlatAppearance.BorderSize = 0;
+            this.btnPanel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPanel.Location = new System.Drawing.Point(0, 120);
+            this.btnPanel.Name = "btnPanel";
+            this.btnPanel.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPanel.Size = new System.Drawing.Size(233, 40);
+            this.btnPanel.TabIndex = 3;
+            this.btnPanel.Text = "Panel";
+            this.btnPanel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPanel.UseVisualStyleBackColor = false;
+            this.btnPanel.Click += new System.EventHandler(this.btnPanel_Click);
             // 
-            // button3
+            // btnListBoxComboBox
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 80);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(233, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnListBoxComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnListBoxComboBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnListBoxComboBox.FlatAppearance.BorderSize = 0;
+            this.btnListBoxComboBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnListBoxComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListBoxComboBox.Location = new System.Drawing.Point(0, 80);
+            this.btnListBoxComboBox.Name = "btnListBoxComboBox";
+            this.btnListBoxComboBox.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnListBoxComboBox.Size = new System.Drawing.Size(233, 40);
+            this.btnListBoxComboBox.TabIndex = 2;
+            this.btnListBoxComboBox.Text = "ListBox y ComboBox";
+            this.btnListBoxComboBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListBoxComboBox.UseVisualStyleBackColor = false;
+            this.btnListBoxComboBox.Click += new System.EventHandler(this.btnListBoxComboBox_Click);
             // 
-            // button2
+            // btnPruebaLabel
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 40);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(233, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnPruebaLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(185)))));
+            this.btnPruebaLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPruebaLabel.FlatAppearance.BorderSize = 0;
+            this.btnPruebaLabel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.btnPruebaLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPruebaLabel.Location = new System.Drawing.Point(0, 40);
+            this.btnPruebaLabel.Name = "btnPruebaLabel";
+            this.btnPruebaLabel.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPruebaLabel.Size = new System.Drawing.Size(233, 40);
+            this.btnPruebaLabel.TabIndex = 1;
+            this.btnPruebaLabel.Text = "Prueba Label";
+            this.btnPruebaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPruebaLabel.UseVisualStyleBackColor = false;
+            this.btnPruebaLabel.Click += new System.EventHandler(this.btnPruebaLabel_Click);
             // 
             // btnControles
             // 
@@ -385,10 +390,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnMenuEjercicios1;
         private System.Windows.Forms.Panel panelSubMenu1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCheckBox;
+        private System.Windows.Forms.Button btnPanel;
+        private System.Windows.Forms.Button btnListBoxComboBox;
+        private System.Windows.Forms.Button btnPruebaLabel;
         private System.Windows.Forms.Button btnControles;
         private System.Windows.Forms.Panel panelSubMenu2;
         private System.Windows.Forms.Button button6;
@@ -396,7 +401,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnRadioButton;
         private System.Windows.Forms.Button btnMenuEjercicios2;
         private System.Windows.Forms.Panel panelContainerForm;
         private System.Windows.Forms.PictureBox pictureBox1;

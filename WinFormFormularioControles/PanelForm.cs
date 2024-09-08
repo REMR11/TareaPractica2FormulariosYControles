@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormFormularioControles
 {
-    public partial class PruebaLabel : Form
+    public partial class PanelForm : Form
     {
-        public PruebaLabel()
+        public PanelForm()
         {
             InitializeComponent();
         }
@@ -20,11 +20,6 @@ namespace WinFormFormularioControles
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnMostrarClave_Click(object sender, EventArgs e)
-        {
-            lblVerClave.Text = txtDigitarClave.Text;
         }
     }
 }

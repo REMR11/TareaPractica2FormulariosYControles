@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckBoxForm.Designer.cs">
+      <DependentUpon>CheckBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListBoxyComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBoxyComboBox.Designer.cs">
+      <DependentUpon>ListBoxyComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelForm.Designer.cs">
+      <DependentUpon>PanelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PruebaLabel.cs">
@@ -66,11 +84,26 @@
     <Compile Include="PruebaLabel.Designer.cs">
       <DependentUpon>PruebaLabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="RadioButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadioButtonForm.Designer.cs">
+      <DependentUpon>RadioButtonForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CheckBoxForm.resx">
+      <DependentUpon>CheckBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles.resx">
       <DependentUpon>Controles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxyComboBox.resx">
+      <DependentUpon>ListBoxyComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelForm.resx">
+      <DependentUpon>PanelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="PruebaLabel.resx">
       <DependentUpon>PruebaLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadioButtonForm.resx">
+      <DependentUpon>RadioButtonForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

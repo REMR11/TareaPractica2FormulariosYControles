@@ -16,5 +16,23 @@ namespace WinFormFormularioControles
         {
             InitializeComponent();
         }
+
+        private void btnPresiona_Click(object sender, EventArgs e)
+        {
+            TextBox txt1 = new TextBox();
+            TextBox txt2 = new TextBox();
+
+            txt1.Location = new Point(230, 170);
+            txt2.Location = new Point(230, 200);
+
+            this.Controls.Add(txt1);
+            this.Controls.Add(txt2);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }
